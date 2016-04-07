@@ -1,13 +1,15 @@
+%include	/usr/lib/rpm/macros.perl
 Summary:	Build Debian-compatible .deb packages from RPM .spec files
 Name:		debbuild
-Version:	0.11.2
+Version:	0.11.3
 Release:	0.1
 License:	GPL v2+
 Group:		Applications/File
 Source0:	https://secure.deepnet.cx/releases/debbuild/%{name}-%{version}.tar.gz
-# Source0-md5:	10614cd2b722d3e8e50c9a884bd1e6cf
+# Source0-md5:	adddf00c1ed1bc062f25accd2b479946
 URL:		https://secure.deepnet.cx/trac/debbuild
 #BuildRequires:	perl-podlators
+BuildRequires:	rpm-perlprov >= 4.1-13
 Requires:	bash
 Requires:	bzip2
 Requires:	dpkg
@@ -32,7 +34,6 @@ should be able to interpret most spec files usefully.
 rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
-%{_fixperms} $RPM_BUILD_ROOT/*
 
 %clean
 rm -rf $RPM_BUILD_ROOT
