@@ -17,7 +17,6 @@ Requires:	fakeroot
 Requires:	patch
 Requires:	pax
 Requires:	xz
-Suggests:	dpkg-dev
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
