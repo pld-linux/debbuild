@@ -4,7 +4,7 @@
 Summary:	Build Debian-compatible .deb packages from RPM .spec files
 Name:		debbuild
 Version:	16.5.1
-Release:	0.1
+Release:	0.2
 License:	GPL v2+
 Group:		Applications/File
 Source0:	https://github.com/ascherer/debbuild/archive/%{name}-%{version}.tar.gz
@@ -21,6 +21,8 @@ Requires:	pax
 Requires:	xz
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+
+%define		_libdir	%{_prefix}/lib
 
 %description
 debbuild attempts to build Debian-friendly semi-native packages from
