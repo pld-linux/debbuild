@@ -3,12 +3,12 @@
 %include	/usr/lib/rpm/macros.perl
 Summary:	Build Debian-compatible .deb packages from RPM .spec files
 Name:		debbuild
-Version:	16.5.1
+Version:	16.6.0
 Release:	0.2
 License:	GPL v2+
 Group:		Applications/File
 Source0:	https://github.com/ascherer/debbuild/archive/%{name}-%{version}.tar.gz
-# Source0-md5:	9b9ad436900c1c7484c74fabeb01cd56
+# Source0-md5:	22a3c34035b3a2f1d086c0ecbb7c6180
 URL:		https://github.com/ascherer/debbuild
 #BuildRequires:	perl-podlators
 BuildRequires:	rpm-perlprov >= 4.1-13
