@@ -1,6 +1,5 @@
 # TODO
 # - not sure why %post can't be done at package time?
-%include	/usr/lib/rpm/macros.perl
 Summary:	Build Debian-compatible .deb packages from RPM .spec files
 Name:		debbuild
 Version:	16.6.0
